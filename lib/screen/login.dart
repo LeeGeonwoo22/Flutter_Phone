@@ -19,20 +19,23 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       appBar: AppBar(),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            loginForm(context),
-            SizedBox(
-              height: 30,
-            ),
-            smsCodeInput(),
-            SizedBox(
-              height: 15,
-            ),
-            button(),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              loginForm(context),
+              SizedBox(
+                height: 30,
+              ),
+              smsCodeInput(),
+              SizedBox(
+                height: 15,
+              ),
+              button(),
+            ],
+          ),
         ),
       ),
     );
